@@ -1,49 +1,6 @@
 import './style.css';
 
-let myLibrary = [
-	{
-		title: 'The Hobbit',
-		author: 'J.R.R Tolkien',
-		pageCount: 295,
-		hasRead: false,
-	},
-	{
-		title: 'Identity',
-		author: 'Nora Roberts',
-		pageCount: 345,
-		hasRead: false,
-	},
-	{
-		title: 'Homecoming',
-		author: 'Kate Morton',
-		pageCount: 312,
-		hasRead: false,
-	},
-	{
-		title: 'The Five-Star Weekend',
-		author: 'Elin Hilderbrand',
-		pageCount: 456,
-		hasRead: false,
-	},
-	{
-		title: 'Zero Days',
-		author: 'Ruth Ware',
-		pageCount: 208,
-		hasRead: false,
-	},
-	{
-		title: 'The 9th Man',
-		author: 'Steve Berry',
-		pageCount: 208,
-		hasRead: false,
-	},
-	{
-		title: 'Hallowed Ground',
-		author: 'Linda Castillo',
-		pageCount: 208,
-		hasRead: false,
-	},
-];
+let myLibrary = [];
 
 // DOM elements
 const bookShelf = document.querySelector('.book-shelf');
