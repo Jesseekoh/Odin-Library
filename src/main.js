@@ -1,5 +1,4 @@
-import './style.css';
-
+// TODO: Add functionality to handle when the user is trying to add an empty book
 let myLibrary = [];
 
 // DOM elements
