@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	/* background-color: #242424; */
+	/* overflow-y: scroll; */
+	margin-left: calc(100vw - 100%);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+nav h3 {
+	font-family: 'Russo One';
+
+}
+
+.add-btn {
+	z-index: 3;
+	transition: 400ms all ease-in-out;
+}
+
+.rotate {
+
+	rotate: 225deg;
+}
+
+/* Modal */
+
+
+.modal-overlay {
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: 0.4s all ease-in;
+}
+
+.fade {
+	opacity: 1;
+}
+
+.overlay__modal-wrapper {
+	position: relative;
+	width: calc(100% - 2rem);
+	/* margin-inline: auto; */
+	max-width: 400px;
+	animation: animatetop 0.4s;
+}
+
+
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+
+/* Book Card Styles */
+.card {
+	/* background-color: rgb(38, 101, 108); */
+}

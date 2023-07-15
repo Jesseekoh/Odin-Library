@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+	<link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Odin's Library</title>
+</head>
+
+<body>
+	<div id="app" class="bg-gradient-to-b from-mint-3 to-teal-700 bg-fixed min-h-full">
+		<nav class="bg-slate-800 mb-3">
+			<div class="container px-2 py-4 mx-auto flex items-center">
+
+				<a href="#" class="nav__logo"><img src="./assets/book-alt.svg" width="40" height="40" alt="" /></a>
+				<h3 class="font-bold text-2xl">Odin's Library</h3>
+			</div>
+		</nav>
+		<header>
+			<div class="container px-4">
+				<!-- <h1 class="text-3xl font-extrabold text-center">Odin's Library</h1> -->
+			</div>
+		</header>
+		<main>
+			<div class="container mx-auto px-3">
+				<div>
+					<button
+						class="add-btn fixed cursor-pointer bottom-5 right-6 w-14 h-14 rounded-full bg-gradient-to-br from-cyan-600 to-teal-300 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700">
+						<i class="bx bx-plus text-3xl"></i>
+					</button>
+					<div class="modal-overlay fixed left-0 right-0 top-0 bottom-0 hidden items-center">
+						<div class="bg-slate-600 px-3 py-11 overlay__modal-wrapper mx-auto rounded-lg">
+							<form class="modal">
+								<label class="font-semibold text-sm block mb-2" for="book-title">
+									Title
+								</label>
+								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="text" name="book-title" id="book-title"
+									placeholder="Book Title" />
+								<label class="font-semibold text-sm block mb-2" for="book-author">Author</label>
+								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="text" name="book-author" id="book-author"
+									placeholder="Book Author" />
+								<label class="font-semibold text-sm block mb-2" for="pages">Pages</label>
+								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="number" name="pages" id="pages"
+									placeholder="Number of pages" />
+								<div class="w-full text-center">
+									<label class="font-semibold text-sm mb-2 inline-block" for="complete">
+										Completed
+									</label>
+									<input type="checkbox" name="complete" id="complete" />
+								</div>
+								<button class="add-new-book-btn w-full bg-gradient-to-br from-cyan-600 to-teal-300 py-2 rounded-md">
+									Add Book
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="book-shelf grid md:grid-cols-2 lg:grid-cols-4 gap-2 pb-2"></div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>
