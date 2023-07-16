@@ -39,20 +39,21 @@
 									Title
 								</label>
 								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="text" name="book-title" id="book-title"
-									placeholder="Book Title" />
+									placeholder="Book Title" required />
 								<label class="font-semibold text-sm block mb-2" for="book-author">Author</label>
 								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="text" name="book-author" id="book-author"
-									placeholder="Book Author" />
+									placeholder="Book Author" required />
 								<label class="font-semibold text-sm block mb-2" for="pages">Pages</label>
 								<input class="w-full rounded-lg px-3 py-2 mb-3 border" type="number" name="pages" id="pages"
-									placeholder="Number of pages" />
+									placeholder="Number of pages" required />
 								<div class="w-full text-center">
 									<label class="font-semibold text-sm mb-2 inline-block" for="complete">
 										Completed
 									</label>
 									<input type="checkbox" name="complete" id="complete" />
 								</div>
-								<button class="add-new-book-btn w-full bg-gradient-to-br from-cyan-600 to-teal-300 py-2 rounded-md">
+								<button class="add-new-book-btn w-full bg-gradient-to-br from-cyan-600 to-teal-300 py-2 rounded-md"
+									type="submit">
 									Add Book
 								</button>
 							</form>

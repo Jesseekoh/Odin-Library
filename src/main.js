@@ -1,4 +1,3 @@
-// TODO: Add functionality to handle when the user is trying to add an empty book
 let myLibrary = [];
 
 // DOM elements
@@ -92,7 +91,7 @@ function displayForm() {
 
 modalToggle.onclick = displayForm;
 
-addNewBookBtn.onclick = (e) => {
+form.onsubmit = (e) => {
 	e.preventDefault();
 	const data = new FormData(form);
 	const json = Object.fromEntries(data.entries());
